@@ -20,7 +20,7 @@
       perSystem = { self', system, lib, config, pkgs, ... }: {
         # Default shell.
         devShells.default = pkgs.mkShell {
-          buildInputs = [ pkgs.go ];
+          buildInputs = with pkgs; [ go ];
         };
       };
   };
